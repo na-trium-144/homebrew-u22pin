@@ -68,6 +68,6 @@ class ProtobufAT312 < Formula
     EOS
     (testpath/"test.proto").write testdata
     system bin/"protoc", "test.proto", "--cpp_out=."
-    system Formula["python@3.8"].opt_bin/"python3", "-c", "import google.protobuf"
+    system Formula["python@3.10"].opt_bin/"python3", "-c", "import google.protobuf"
   end
 end
