@@ -4,7 +4,7 @@ class BoostAT174 < Formula
   url "https://github.com/boostorg/boost/archive/refs/tags/boost-1.74.0.tar.gz"
   sha256 "0b9bc69b9d1d60fcad0478aa370ba80311a51ebba31538c23447c1032331ea5e"
   license "BSL-1.0"
-  head "https://github.com/boostorg/boost.git"
+  head "https://github.com/boostorg/boost.git", branch: "master"
 
   livecheck do
     url "https://www.boost.org/feed/downloads.rss"

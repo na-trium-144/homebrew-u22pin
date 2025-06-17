@@ -6,7 +6,7 @@ class ProtobufAT312 < Formula
   license "BSD-3-Clause"
 
   head do
-    url "https://github.com/protocolbuffers/protobuf.git"
+    url "https://github.com/protocolbuffers/protobuf.git", branch: "main"
 
     depends_on "autoconf" => :build
     depends_on "automake" => :build
