@@ -1,8 +1,10 @@
 class BoostAT174 < Formula
   desc "Collection of portable C++ source libraries"
   homepage "https://www.boost.org/"
-  url "https://github.com/boostorg/boost/archive/refs/tags/boost-1.74.0.tar.gz"
-  sha256 "0b9bc69b9d1d60fcad0478aa370ba80311a51ebba31538c23447c1032331ea5e"
+  url "https://sourceforge.net/projects/boost/files/boost/1.74.0/boost_1_74_0.tar.bz2"
+  # url "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2"
+  # mirror "https://dl.bintray.com/homebrew/mirror/boost_1_74_0.tar.bz2"
+  sha256 "83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1"
   license "BSL-1.0"
   head "https://github.com/boostorg/boost.git", branch: "master"
 
