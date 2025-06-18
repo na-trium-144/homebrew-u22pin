@@ -53,7 +53,7 @@ class SpdlogAT19 < Formula
       }
     EOS
 
-    system ENV.cxx, "-std=c++11", "test.cpp", "-I#{include}", "-L#{Formula["fmt"].opt_lib}", "-lfmt", "-o", "test"
+    system ENV.cxx, "-std=c++11", "test.cpp", "-I#{include}", "-L#{Formula["fmt@8"].opt_lib}", "-lfmt", "-o", "test"
     system "./test"
     assert_predicate testpath/"basic-log.txt", :exist?
     assert_match "Test", (testpath/"basic-log.txt").read
