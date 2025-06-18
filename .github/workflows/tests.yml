@@ -19,6 +19,7 @@ jobs:
       pull-requests: read
     steps:
       - name: Free Disk Space (Ubuntu)
+        if: matrix.os == 'ubuntu-22.04'
         uses: jlumbroso/free-disk-space@main
         with:
           tool-cache: true
