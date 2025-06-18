@@ -18,7 +18,7 @@ class GrpcAT130 < Formula
   depends_on "libtool" => :build
   depends_on "c-ares"
   depends_on "gflags"
-  depends_on "openssl@1.1.1"
+  depends_on "openssl"
   depends_on "protobuf@3.12"
 
   resource "gtest" do
