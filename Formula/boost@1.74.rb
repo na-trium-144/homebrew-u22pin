@@ -28,7 +28,11 @@ class BoostAT174 < Formula
   def install
     # Force boost to compile with the desired compiler
     open("user-config.jam", "a") do |file|
-      file.write "using darwin : : #{ENV.cxx} ;\n"
+      if OS.mac?
+        file.write "using darwin : : #{ENV.cxx} ;\n"
+      else
+        file.write "using gcc : : #{ENV.cxx} ;\n"
+      end
     end
 
     # libdir should be set by --prefix but isn't
