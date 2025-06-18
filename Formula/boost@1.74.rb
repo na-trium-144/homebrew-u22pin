@@ -72,6 +72,8 @@ class BoostAT174 < Formula
     args << "cxxflags=-std=c++14"
     args << "cxxflags=-stdlib=libc++" << "linkflags=-stdlib=libc++" if ENV.compiler == :clang
 
+    args << "cxxflags=-Wno-enum-constexpr-conversion" if ENV.compiler == :clang
+
     system "./bootstrap.sh", *bootstrap_args
     system "./b2", "headers"
     system "./b2", *args
