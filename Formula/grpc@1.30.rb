@@ -27,8 +27,7 @@ class GrpcAT130 < Formula
   end
 
   def install
-    system "make", "install", "prefix=#{prefix}"
-
+    system "make", "install", "prefix=#{prefix}", "CFLAGS=-Wno-implicit-function-declaration"
     system "make", "install-plugins", "prefix=#{prefix}"
 
     (buildpath/"third_party/googletest").install resource("gtest")
