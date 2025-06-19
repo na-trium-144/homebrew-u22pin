@@ -14,7 +14,7 @@ class ProtobufAT312 < Formula
   end
 
   depends_on "python@3.10" => [:build, :test]
-  
+
   on_linux do
     depends_on "zlib"
   end

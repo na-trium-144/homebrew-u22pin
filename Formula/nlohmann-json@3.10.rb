@@ -1,7 +1,7 @@
 class NlohmannJsonAT310 < Formula
   desc "JSON for modern C++"
   homepage "https://github.com/nlohmann/json"
-  url "https://github.com/nlohmann/json/archive/v3.10.5.tar.gz"
+  url "https://github.com/nlohmann/json/archive/refs/tags/v3.10.5.tar.gz"
   sha256 "5daca6ca216495edf89d167f808d1d03c4a4d929cef7da5e10f135ae1540c7e4"
   license "MIT"
   head "https://github.com/nlohmann/json.git", branch: "develop"

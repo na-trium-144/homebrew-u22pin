@@ -1,7 +1,7 @@
 class SpdlogAT19 < Formula
   desc "Super fast C++ logging library"
   homepage "https://github.com/gabime/spdlog"
-  url "https://github.com/gabime/spdlog/archive/v1.9.2.tar.gz"
+  url "https://github.com/gabime/spdlog/archive/refs/tags/v1.9.2.tar.gz"
   sha256 "6fff9215f5cb81760be4cc16d033526d1080427d236e86d70bb02994f85e3d38"
   license "MIT"
   head "https://github.com/gabime/spdlog.git", branch: "v1.x"
@@ -55,7 +55,7 @@ class SpdlogAT19 < Formula
 
     system ENV.cxx, "-std=c++11", "test.cpp", "-I#{include}", "-L#{Formula["fmt@8"].opt_lib}", "-lfmt", "-o", "test"
     system "./test"
-    assert_predicate testpath/"basic-log.txt", :exist?
+    assert_path_exists testpath/"basic-log.txt"
     assert_match "Test", (testpath/"basic-log.txt").read
   end
 end

@@ -22,7 +22,7 @@ class GrpcAT130 < Formula
   depends_on "protobuf@3.12"
 
   resource "gtest" do
-    url "https://github.com/google/googletest/archive/release-1.10.0.tar.gz"
+    url "https://github.com/google/googletest/archive/refs/tags/release-1.10.0.tar.gz"
     sha256 "9dc9157a9a1551ec7a7e43daea9a694a0bb5fb8bec81235d8a1e6ef64c716dcb"
   end
 
