@@ -5,6 +5,8 @@ class GoogletestAT111 < Formula
   sha256 "b4870bf121ff7795ba20d20bcdd8627b8e088f2d1dab299a031c1034eddc93d5"
   license "BSD-3-Clause"
 
+  keg_only :versioned_formula
+
   depends_on "cmake@3.22" => :build
 
   def install

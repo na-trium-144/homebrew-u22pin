@@ -13,6 +13,8 @@ class ProtobufAT312 < Formula
     depends_on "libtool" => :build
   end
 
+  keg_only :versioned_formula
+
   depends_on "python@3.10" => [:build, :test]
 
   on_linux do

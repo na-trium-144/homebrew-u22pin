@@ -6,6 +6,8 @@ class NlohmannJsonAT310 < Formula
   license "MIT"
   head "https://github.com/nlohmann/json.git", branch: "develop"
 
+  keg_only :versioned_formula
+
   depends_on "cmake@3.22" => :build
 
   def install

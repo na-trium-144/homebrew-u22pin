@@ -7,6 +7,8 @@ class FmtAT8 < Formula
   revision 1
   head "https://github.com/fmtlib/fmt.git", branch: "master"
 
+  keg_only :versioned_formula
+
   depends_on "cmake@3.22" => :build
 
   # Fix Watchman build.

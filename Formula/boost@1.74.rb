@@ -13,6 +13,8 @@ class BoostAT174 < Formula
     regex(/>Version v?(\d+(?:\.\d+)+)</i)
   end
 
+  keg_only :versioned_formula
+
   depends_on "icu4c"
 
   uses_from_macos "bzip2"

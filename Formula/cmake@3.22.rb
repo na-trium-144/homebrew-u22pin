@@ -15,6 +15,8 @@ class CmakeAT322 < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  keg_only :versioned_formula
+
   uses_from_macos "ncurses"
 
   on_linux do

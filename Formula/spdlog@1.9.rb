@@ -6,6 +6,8 @@ class SpdlogAT19 < Formula
   license "MIT"
   head "https://github.com/gabime/spdlog.git", branch: "v1.x"
 
+  keg_only :versioned_formula
+
   depends_on "cmake@3.22" => :build
   depends_on "fmt@8"
 

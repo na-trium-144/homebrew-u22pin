@@ -6,6 +6,8 @@ class GoogleBenchmarkAT16 < Formula
   license "Apache-2.0"
   head "https://github.com/google/benchmark.git", branch: "main"
 
+  keg_only :versioned_formula
+
   depends_on "cmake@3.22" => :build
 
   def install

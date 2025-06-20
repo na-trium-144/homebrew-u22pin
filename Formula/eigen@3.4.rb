@@ -13,6 +13,7 @@ class EigenAT34 < Formula
   end
 
   no_autobump! because: :requires_manual_review
+  keg_only :versioned_formula
 
   depends_on "cmake@3.22" => :build
 
