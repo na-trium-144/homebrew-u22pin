@@ -6,7 +6,7 @@ class GrpcAT130 < Formula
     revision: "de6defa6fff08de20e36f9168f5b277e292daf46",
     shallow:  false
   license "Apache-2.0"
-  head "https://github.com/grpc/grpc.git"
+  head "https://github.com/grpc/grpc.git", branch: "master"
 
   livecheck do
     url "https://github.com/grpc/grpc/releases/latest"
