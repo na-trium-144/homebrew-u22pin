@@ -52,11 +52,8 @@ class CmakeAT322 < Formula
 
     # Remove deprecated and unusable binary
     # https://gitlab.kitware.com/cmake/cmake/-/issues/20235
-    if (pkgshare/"Modules/Internal/CPack/CPack.OSXScriptLauncher.in").exist?
-      (pkgshare/"Modules/Internal/CPack/CPack.OSXScriptLauncher.in").unlink
-    end
-    if (pkgshare/"cmake/Modules/Internal/CPack/CPack.OSXScriptLauncher.in").exist?
-      (pkgshare/"cmake/Modules/Internal/CPack/CPack.OSXScriptLauncher.in").unlink
+    if (share/"Modules/Internal/CPack/CPack.OSXScriptLauncher.in").exist?
+      (share/"Modules/Internal/CPack/CPack.OSXScriptLauncher.in").unlink
     end
   end
 
