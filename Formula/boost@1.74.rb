@@ -81,18 +81,18 @@ class BoostAT174 < Formula
     system "./b2", *args
   end
 
-  def caveats
-    s = ""
-    # ENV.compiler doesn't exist in caveats. Check library availability
-    # instead.
-    if Dir["#{lib}/libboost_log*"].empty?
-      s += <<~EOS
-        Building of Boost.Log is disabled because it requires newer GCC or Clang.
-      EOS
-    end
+  # def caveats
+  #   s = ""
+  #   # ENV.compiler doesn't exist in caveats. Check library availability
+  #   # instead.
+  #   if Dir["#{lib}/libboost_log*"].empty?
+  #     s += <<~EOS
+  #       Building of Boost.Log is disabled because it requires newer GCC or Clang.
+  #     EOS
+  #   end
 
-    s
-  end
+  #   s
+  # end
 
   test do
     (testpath/"test.cpp").write <<~EOS
