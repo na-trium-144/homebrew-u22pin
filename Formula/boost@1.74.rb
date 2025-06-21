@@ -114,7 +114,7 @@ class BoostAT174 < Formula
         return 0;
       }
     EOS
-    system ENV.cxx, "test.cpp", "-o", "test"
+    system ENV.cxx, "test.cpp", "-o", "test", "-I#{include}"
     system "./test"
   end
 end
