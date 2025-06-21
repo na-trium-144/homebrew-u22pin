@@ -13,6 +13,13 @@ class BoostAT174 < Formula
     regex(/>Version v?(\d+(?:\.\d+)+)</i)
   end
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/boost@1.74-1.74.0"
+    sha256 cellar: :any, arm64_sequoia: "1582c3b2af8934180a98bfc5207f68f54ad73ff01afe52d39757b70081142146"
+    sha256 cellar: :any, arm64_sonoma:  "f4263676333952dadb7bd0327bf34e18529da90ab68116222893f91c65497b01"
+    sha256 cellar: :any, ventura:       "469bfe04a52db79cf35400c8cf1d6d0c31ffa5c40fa56c19be33f1471ba66175"
+  end
+
   keg_only :versioned_formula
 
   depends_on "icu4c"
