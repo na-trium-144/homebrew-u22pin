@@ -13,6 +13,13 @@ class GrpcAT130 < Formula
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/grpc@1.30-1.30.2"
+    sha256 arm64_sequoia: "2add60c19770b7d0105f6924c68936aef226a0a85e91708fd9a67989f9cb22de"
+    sha256 arm64_sonoma:  "ff4a2cef1d86c84dbcc144762f5c8984b89759bc78ebe7b7fc10aac56be9a294"
+    sha256 ventura:       "7de26ef47d43a02a0a481d02ae3dbe458173fa2f19c3f903b01c1f4e839cc693"
+  end
+
   keg_only :versioned_formula
 
   depends_on "autoconf" => :build
