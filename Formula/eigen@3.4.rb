@@ -13,6 +13,13 @@ class EigenAT34 < Formula
   end
 
   no_autobump! because: :requires_manual_review
+
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/eigen@3.4-3.4.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b9bb1e9a88a8e9177107fe634d057e54830d2f8cf71c4da66788739e31e7b915"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "57bf3ca9bad31bdf349c44e43833bc1ac5e143f3daecf78717914bbd4d2ab272"
+    sha256 cellar: :any_skip_relocation, ventura:       "60d04c56543316ee5fd38f0dc1a66e23e51973a31199913b69f37b9f7692696f"
+  end
   keg_only :versioned_formula
 
   depends_on "cmake@3.22" => :build
