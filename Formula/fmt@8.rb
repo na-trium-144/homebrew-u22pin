@@ -7,6 +7,13 @@ class FmtAT8 < Formula
   revision 1
   head "https://github.com/fmtlib/fmt.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/fmt@8-8.1.1_1"
+    sha256 cellar: :any, arm64_sequoia: "a99cfcc74e330eed1cd105ba5fb3aa11ce7736fe3b02cef5ad6569cb8c1e6ec8"
+    sha256 cellar: :any, arm64_sonoma:  "82649df78a8572688105bd1a2717db85fe6f7181572f89df09e48a7a5bc24daa"
+    sha256 cellar: :any, ventura:       "a4fafcd9e0972e988dd628d5689279017048ef015ad481a6003406fa2854236b"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake@3.22" => :build
