@@ -6,6 +6,13 @@ class SpdlogAT19 < Formula
   license "MIT"
   head "https://github.com/gabime/spdlog.git", branch: "v1.x"
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/spdlog@1.9-1.9.2"
+    sha256 cellar: :any, arm64_sequoia: "6a7c01b46c1225ef309c24318ff1c2619472131f1d4b612359503a0ae896d9ae"
+    sha256 cellar: :any, arm64_sonoma:  "e5c4b781f77e6de85e0eeada1e31d1cbe39221ee8274f5b87833a4943265072a"
+    sha256 cellar: :any, ventura:       "811b3d657536e332e87b73f2210161d6d558b3489e0300ee126e73fee64826b6"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake@3.22" => :build
