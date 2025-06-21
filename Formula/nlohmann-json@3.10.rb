@@ -6,6 +6,13 @@ class NlohmannJsonAT310 < Formula
   license "MIT"
   head "https://github.com/nlohmann/json.git", branch: "develop"
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/nlohmann-json@3.10-3.10.5"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ba715c034067f0bd222d8ea9b08d070b2aadd4cdb1e8b8a0dfe1d40bbbb187bd"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "232afcfbe1e72fa87d0d561ac81c7baa5a58ce88ea47eef127b22208a860e68e"
+    sha256 cellar: :any_skip_relocation, ventura:       "87f7c578a063d506887b6e786b12e96549d77e67d27b8f732364dedf9bcbf8ce"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake@3.22" => :build
