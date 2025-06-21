@@ -5,6 +5,13 @@ class ProtobufAT312 < Formula
   sha256 "e7bf41873d1a87c05c2b0a6197f4445c6ea3469ce0165ff14de2df8b34262530"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/protobuf@3.12-3.12.4"
+    sha256 cellar: :any, arm64_sequoia: "6520b95737f140149ab90030c2121fd0da5d9f787cfb32040b1b4df20037062d"
+    sha256 cellar: :any, arm64_sonoma:  "e9b5bac80fd3fba05854ad946db3616f67f9cf7cab4640df1591fc42d921de4c"
+    sha256 cellar: :any, ventura:       "c1e9ab4d85713ea116b95253588cc583f314b47b47d5ef8ad182f45cc90c9964"
+  end
+
   head do
     url "https://github.com/protocolbuffers/protobuf.git", branch: "main"
 
