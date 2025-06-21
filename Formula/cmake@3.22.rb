@@ -15,6 +15,13 @@ class CmakeAT322 < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/na-trium-144/homebrew-u22pin/releases/download/cmake@3.22-3.22.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bd8467a4d3204b3bd0b335e13f7d6245c0c7246d28702b582667ba447dbb122c"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "4c5b53acba76a23f9c0e7edc0157ef6babf3be376f74139b2dab736dc651b465"
+    sha256 cellar: :any_skip_relocation, ventura:       "234c79077a572d943edd8dfc370bcbb33db29fe07a331eccba7ac9fac2f6f04d"
+  end
+
   keg_only :versioned_formula
 
   uses_from_macos "ncurses"
